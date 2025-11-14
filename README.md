@@ -15,49 +15,49 @@ Se ejecutaron pruebas manuales para verificar toda la funcionalidad del sistema.
 ### Prueba 1: Registro de nuevo usuario (Adolfo Castro)
 * **Descripción:** Verifica que un nuevo usuario (`Adolfo Castro`) puede ser creado. El sistema debe escribir en Postgres y Mongo, y registrar la acción.
 * **Resultado:** **ÉXITO**. El usuario fue creado en ambas bases de datos y el log anónimo de "registro_nuevo_usuario" fue creado.
-    ![Prueba 1 Screenshot](screenshots/image15.png)
+    ![Prueba 1 Screenshot](Screenshots/image15.png)
 
-    ![Prueba 1 Screenshot](screenshots/image13.png)
+    ![Prueba 1 Screenshot](Screenshots/image13.png)
 
 ### Prueba 2: Login con credenciales correctas (Adolfo Castro)
 * **Descripción:** Verifica que el usuario recién creado (`Adolfo Castro`) puede iniciar sesión.
 * **Resultado:** **ÉXITO**. El usuario fue autenticado, se mostró el dashboard y se creó un log de `login_exitoso` en MongoDB.
-    ![Prueba 2 Screenshot](screenshots/image16.png)
+    ![Prueba 2 Screenshot](Screenshots/image16.png)
 
 ### Prueba 3: Edición de perfil de usuario (Jose Naranjo)
 * **Descripción:** Verifica que un usuario logueado (`Jose Naranjo`) puede editar su perfil. La actualización debe reflejarse en ambas bases de datos y ser registrada.
 * **Resultado:** **ÉXITO**. El email fue actualizado en el terminal, en la tabla de Postgres y se generó un log de `perfil_actualizado` en Mongo.
-    ![Prueba 3 Screenshot](screenshots/image3.png)
+    ![Prueba 3 Screenshot](Screenshots/image3.png)
 
-    ![Prueba 3 Screenshot](screenshots/image12.png)
+    ![Prueba 3 Screenshot](Screenshots/image12.png)
 
-    ![Prueba 3 Screenshot](screenshots/image8.png)
+    ![Prueba 3 Screenshot](Screenshots/image8.png)
 
 ### Prueba 4: Cierre de sesión (Jose Naranjo)
 * **Descripción:** Verifica que un usuario logueado puede cerrar su sesión. La acción debe ser registrada.
 * **Resultado:** **ÉXITO**. El sistema mostró el mensaje "Goodbye" y se creó un log de `logout` en MongoDB.
-    ![Prueba 4 Screenshot](screenshots/image4.png)
+    ![Prueba 4 Screenshot](Screenshots/image4.png)
 
-    ![Prueba 4 Screenshot](screenshots/image9.png)
+    ![Prueba 4 Screenshot](Screenshots/image9.png)
 
 ### Prueba 5: Login con credenciales incorrectas
 * **Descripción:** Verifica que el sistema rechaza credenciales inválidas.
 * **Resultado:** **ÉXITO**. La terminal mostró un error y la base de datos de MongoDB registró correctamente el evento `login_fallido`.
-    ![Prueba 5 Screenshot](screenshots/image10.png)
-    ![Prueba 5 Screenshot](screenshots/image11.png)
+    ![Prueba 5 Screenshot](Screenshots/image10.png)
+    ![Prueba 5 Screenshot](Screenshots/image11.png)
 
 ### Prueba 6: Edición de perfil de usuario (Adolfo Castro)
 * **Descripción:** Verifica que un usuario logueado (`Adolfo Castro`) puede editar su correo electrónico. La actualización debe reflejarse en la sesión de la app y registrarse en los logs.
 * **Resultado:** **ÉXITO**. El usuario cambió su email de `aacastrom@pucesm.edu.ec` a `aacastrom@gmail.com`. La app mostró el nuevo email al seleccionar "View Profile", y el log `perfil_actualizado` fue creado en MongoDB.
-    ![Prueba 6 Screenshot](screenshots/image17.png)
+    ![Prueba 6 Screenshot](Screenshots/image17.png)
 
-    ![Prueba 6 Screenshot B](screenshots/image18.png)
+    ![Prueba 6 Screenshot B](Screenshots/image18.png)
 
 
 ### Prueba 7: Estado de la base de datos (MongoDB Usuarios)
 * **Descripción:** Verificación de la colección `usuarios` en MongoDB que muestra los datos de los usuarios de prueba.
 * **Resultado:** **ÉXITO**. La colección muestra los documentos para `Jose Naranjo` y `Adolfo Castro` (con su emails ya actualizados).
-    ![Prueba 7 Screenshot](screenshots/image14.png)
+    ![Prueba 7 Screenshot](Screenshots/image14.png)
 
 ---
 
@@ -67,7 +67,7 @@ Siga estos pasos para ejecutar el proyecto en un entorno de desarrollo
 
 1.  **Clonar el Repositorio**
     ```bash
-    git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+    git clone [https://github.com/castro-bot/ExamenPrimerParcial.git](https://github.com/castro-bot/ExamenPrimerParcial.git)
     cd ExamPrimerParcial
     ```
 
